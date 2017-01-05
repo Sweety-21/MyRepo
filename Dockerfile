@@ -7,4 +7,4 @@ ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data 
 ENV APACHE_LOG_DIR /var/log/apache2 
 EXPOSE 80
-CMD ["/usr/sbin/apache2","-DFOREGROUND"]
+CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
